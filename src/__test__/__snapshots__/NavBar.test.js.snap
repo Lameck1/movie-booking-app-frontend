@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render the navbar Renders the navbar 1`] = `
+<div>
+  <header
+    className="flex fixed z-10"
+  >
+    <nav
+      className="w-72 
+        h-screen p-5 pt-8 bg-lime-500 duration-300 z-1 relative"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-angles-left bg-[#fff] rounded-full -right-3 border-dark-purple 
+            absolute cursor-pointer top-9 w-7 border-2 false"
+        data-icon="angles-left"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M77.25 256l137.4-137.4c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25l160 160C175.6 444.9 183.8 448 192 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L77.25 256zM269.3 256l137.4-137.4c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25l160 160C367.6 444.9 375.8 448 384 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L269.3 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <div
+        className="flex gap-x-4 items-center"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-camera bg-[#fff] p-2 cursor-pointer duration-500
+              rotate-[360deg]"
+          data-icon="camera"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M194.6 32H317.4C338.1 32 356.4 45.22 362.9 64.82L373.3 96H448C483.3 96 512 124.7 512 160V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V160C0 124.7 28.65 96 64 96H138.7L149.1 64.82C155.6 45.22 173.9 32 194.6 32H194.6zM256 384C309 384 352 341 352 288C352 234.1 309 192 256 192C202.1 192 160 234.1 160 288C160 341 202.1 384 256 384z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <h1
+          className="text-white origin-left font-medium text-xl duration-300
+            false"
+        >
+          Movies
+        </h1>
+      </div>
+      <ul
+        className="p-7 font-semibold flex-1 h-screen"
+      >
+        <li
+          className="hover:bg-light-white hover:text-white rounded-md hover:opacity-[0.5] hover:text-white text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0"
+        >
+          <a
+            href="/home"
+            onClick={[Function]}
+          >
+            <svg
+              alt="Icon"
+              aria-hidden="true"
+              className="svg-inline--fa fa-house pl-0"
+              data-icon="house"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+          <a
+            className="false origin-left duration-300 text-[16px]  "
+            href="/home"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="hover:bg-light-white hover:text-white rounded-md hover:opacity-[0.5] hover:text-white text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0"
+        >
+          <a
+            href="/movies"
+            onClick={[Function]}
+          >
+            <svg
+              alt="Icon"
+              aria-hidden="true"
+              className="svg-inline--fa fa-camera-retro pl-0"
+              data-icon="camera-retro"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M64 64V48C64 39.16 71.16 32 80 32H144C152.8 32 160 39.16 160 48V64H192L242.5 38.76C251.4 34.31 261.2 32 271.1 32H448C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V128C0 92.65 28.65 64 64 64zM220.6 121.2C211.7 125.7 201.9 128 192 128H64V192H178.8C200.8 176.9 227.3 168 256 168C284.7 168 311.2 176.9 333.2 192H448V96H271.1L220.6 121.2zM256 216C207.4 216 168 255.4 168 304C168 352.6 207.4 392 256 392C304.6 392 344 352.6 344 304C344 255.4 304.6 216 256 216z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+          <a
+            className="false origin-left duration-300 text-[16px]  "
+            href="/movies"
+            onClick={[Function]}
+          >
+            Movies
+          </a>
+        </li>
+        <li
+          className="hover:bg-light-white hover:text-white rounded-md hover:opacity-[0.5] hover:text-white text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0"
+        >
+          <a
+            href="/movies/create"
+            onClick={[Function]}
+          >
+            <svg
+              alt="Icon"
+              aria-hidden="true"
+              className="svg-inline--fa fa-camera pl-0"
+              data-icon="camera"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M194.6 32H317.4C338.1 32 356.4 45.22 362.9 64.82L373.3 96H448C483.3 96 512 124.7 512 160V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V160C0 124.7 28.65 96 64 96H138.7L149.1 64.82C155.6 45.22 173.9 32 194.6 32H194.6zM256 384C309 384 352 341 352 288C352 234.1 309 192 256 192C202.1 192 160 234.1 160 288C160 341 202.1 384 256 384z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+          <a
+            className="false origin-left duration-300 text-[16px]  "
+            href="/movies/create"
+            onClick={[Function]}
+          >
+            Add Movie
+          </a>
+        </li>
+        <li
+          className="hover:bg-light-white hover:text-white rounded-md hover:opacity-[0.5] hover:text-white text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0"
+        >
+          <a
+            href="/my-reservation"
+            onClick={[Function]}
+          >
+            <svg
+              alt="Icon"
+              aria-hidden="true"
+              className="svg-inline--fa fa-cart-arrow-down pl-0"
+              data-icon="cart-arrow-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 24C0 10.75 10.75 0 24 0H96C107.5 0 117.4 8.19 119.6 19.51L121.1 32H312V134.1L288.1 111C279.6 101.7 264.4 101.7 255 111C245.7 120.4 245.7 135.6 255 144.1L319 208.1C328.4 218.3 343.6 218.3 352.1 208.1L416.1 144.1C426.3 135.6 426.3 120.4 416.1 111C407.6 101.7 392.4 101.7 383 111L360 134.1V32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24V24zM224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464zM416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+          <a
+            className="false origin-left duration-300 text-[16px]  "
+            href="/my-reservation"
+            onClick={[Function]}
+          >
+            My Reservation
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      className="false absolute bottom-[0]"
+    >
+      <footer
+        className="footer"
+      >
+        <div>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+             
+            <button
+              className="text-center w-[100%] text-[#fff] justify-center flex gap-x-3 my-[30px] items-center"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-right-to-bracket "
+                data-icon="right-to-bracket"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M344.7 238.5l-144.1-136C193.7 95.97 183.4 94.17 174.6 97.95C165.8 101.8 160.1 110.4 160.1 120V192H32.02C14.33 192 0 206.3 0 224v64c0 17.68 14.33 32 32.02 32h128.1v72c0 9.578 5.707 18.25 14.51 22.05c8.803 3.781 19.03 1.984 26-4.594l144.1-136C354.3 264.4 354.3 247.6 344.7 238.5zM416 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c17.67 0 32 14.33 32 32v256c0 17.67-14.33 32-32 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c53.02 0 96-42.98 96-96V128C512 74.98 469 32 416 32z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <p>
+                Signout
+              </p>
+            </button>
+          </a>
+          <ul
+            className="flex gap-5 m-auto w-[50%]"
+          >
+            <li
+              className="bg-[#00] text-[#fff]"
+            >
+              <a
+                href="/"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-facebook-f "
+                  data-icon="facebook-f"
+                  data-prefix="fab"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </li>
+            <li
+              className="bg-[#00] text-[#fff]"
+            >
+              <a
+                href="/"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-instagram "
+                  data-icon="instagram"
+                  data-prefix="fab"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </li>
+            <li
+              className="bg-[#00] text-[#fff]"
+            >
+              <a
+                href="/"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-linkedin "
+                  data-icon="linkedin"
+                  data-prefix="fab"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </li>
+            <li
+              className="bg-[#00] text-[#fff]"
+            >
+              <a
+                href="/"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-twitter "
+                  data-icon="twitter"
+                  data-prefix="fab"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </li>
+            <li
+              className="bg-[#00] text-[#fff]"
+            >
+              <a
+                href="/"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-telegram "
+                  data-icon="telegram"
+                  data-prefix="fab"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 496 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M248 8C111 8 0 119 0 256S111 504 248 504 496 392.1 496 256 384.1 8 248 8zM362.1 176.7c-3.732 39.22-19.88 134.4-28.1 178.3-3.476 18.58-10.32 24.82-16.95 25.42-14.4 1.326-25.34-9.517-39.29-18.66-21.83-14.31-34.16-23.22-55.35-37.18-24.49-16.14-8.612-25 5.342-39.5 3.652-3.793 67.11-61.51 68.33-66.75 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.6 69.14-14.85 10.19-26.89 9.934c-8.855-.191-25.89-5.006-38.55-9.123-15.53-5.048-27.88-7.717-26.8-16.29q.84-6.7 18.45-13.7 108.4-47.25 144.6-62.3c68.87-28.65 83.18-33.62 92.51-33.79 2.052-.034 6.639 .474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716A43.76 43.76 0 0 1 362.1 176.7z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div
+            className="text-center w-[100%] text-[#fff] my-5 px-5"
+          >
+            <div
+              className="w-[100%]"
+            >
+              <p>
+                © 2022 Kingsley, Amadu, Busiwa. All rights reserved.
+              </p>
+            </div>
+            <div
+              className="flex gap-4 m-auto underline w-[90%] mt-5"
+            >
+              <a
+                href="/"
+              >
+                Privacy policy
+              </a>
+              <a
+                href="/"
+              >
+                Terms of use
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </header>
+</div>
+`;
