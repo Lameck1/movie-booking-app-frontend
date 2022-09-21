@@ -1,6 +1,6 @@
 /* eslint-disable eqeqeq */
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import NavBar from '../navbar/NavBar';
 
@@ -9,6 +9,23 @@ const MovieDetails = () => {
   const movies = useSelector((state) => state.moviesReducer.movies);
 
   const movie = movies.find((item) => item.id == params.id);
+
+  const deleteMovie = (movie) => {
+    const fetchDeleteMovie = async () => {
+      await fetch(`http://localhost:3000/api/v1/movies/${movie.id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+    };
+    fetchDeleteMovie();
+  };
+
+  const deleteMovieHandler = () => {
+    deleteMovie(movie);
+    useLocation().history.push('/movies');
+  };
 
   return (
     <>
@@ -59,6 +76,7 @@ const MovieDetails = () => {
           <button
             type="button"
             className="absolute bottom-0 mb-2 left-0 mt-4 ml-5 bg-red-500 px-12 py-2 text-lg text-white hover:bg-gray-800"
+            onClick={deleteMovieHandler}
           >
             Delete Movie
           </button>
