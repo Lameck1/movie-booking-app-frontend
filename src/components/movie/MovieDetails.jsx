@@ -19,9 +19,7 @@ const MovieDetails = () => {
         </div>
         <div className=" bg-white shadow-lg relative pb-5 w-full">
           <div className="bg-gray-900 py-2">
-            <h2 className="text-lg text-white text-center">
-              Movie details
-            </h2>
+            <h2 className="text-lg text-white text-center">Movie details</h2>
           </div>
           <div className="px-6">
             <div className="mb-3 mt-5 flex justify-between items-center">
@@ -44,8 +42,12 @@ const MovieDetails = () => {
               <span className="text-gray-600">{movie.playing_time}</span>
             </div>
             <div className="mb-3 my-5">
-              <span className="text-gray-500 block font-semibold mb-2">Description:</span>
-              <span className="mb-8 block text-gray-400">{movie.description}</span>
+              <span className="text-gray-500 block font-semibold mb-2">
+                Description:
+              </span>
+              <span className="mb-8 block text-gray-400">
+                {movie.description}
+              </span>
             </div>
           </div>
           <button
@@ -53,6 +55,12 @@ const MovieDetails = () => {
             className="absolute bottom-0 mb-2 right-0 mt-4 mr-5 bg-lime-500 px-12 py-2 text-lg text-white hover:bg-gray-800"
           >
             Reserve
+          </button>
+          <button
+            type="button"
+            className="absolute bottom-0 mb-2 left-0 mt-4 ml-5 bg-red-500 px-12 py-2 text-lg text-white hover:bg-gray-800"
+          >
+            Delete Movie
           </button>
         </div>
       </div>
