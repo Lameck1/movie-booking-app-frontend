@@ -1,30 +1,30 @@
 /* eslint-disable eqeqeq */
 import React from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import NavBar from '../navbar/NavBar';
 
 const MovieDetails = () => {
   const params = useParams();
+  const navigate = useNavigate();
   const movies = useSelector((state) => state.moviesReducer.movies);
 
   const movie = movies.find((item) => item.id == params.id);
 
-  const deleteMovie = (movie) => {
-    const fetchDeleteMovie = async () => {
-      await fetch(`http://localhost:3000/api/v1/movies/${movie.id}`, {
+  // asyn function for deleting movies
+  const deleteMovie = async (movie) => {
+    const response = await fetch(
+      `http://localhost:3000/api/v1/movies/${movie.id}`,
+      {
         method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-    };
-    fetchDeleteMovie();
+      },
+    );
+    return response;
   };
 
   const deleteMovieHandler = () => {
     deleteMovie(movie);
-    useLocation().history.push('/movies');
+    navigate('/movies');
   };
 
   return (
