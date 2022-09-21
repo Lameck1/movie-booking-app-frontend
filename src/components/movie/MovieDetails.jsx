@@ -30,8 +30,8 @@ const MovieDetails = () => {
   return (
     <>
       <NavBar />
-      <div className="container mx-auto py-24 pl-24 pr-6 md:px-32 grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="mr-10 w-full">
+      <div className="container mx-auto ml-40 py-24 pl-24 pr-6 md:px-32 grid grid-cols-1 md:grid-cols-2">
+        <div className="mr-10 p-20 w-full">
           <img src={movie.photo} alt="Movie poster" className="shadow-lg" />
         </div>
         <div className=" bg-white shadow-lg relative pb-5 w-full">
