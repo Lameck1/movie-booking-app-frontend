@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
 import NavBar from '../navbar/NavBar';
 import Input from './Input';
+import { fetchMovies } from '../../redux/reducers/moviesReducer';
 
 const fetchAddMovie = async (movie) => {
   const sendMovie = {
@@ -44,12 +46,33 @@ const defaultFormFields = {
 
 const AddMovies = () => {
   const [movie, setMovie] = useState({ ...defaultFormFields });
+  const [isError, setIsError] = useState(false);
+  const dispatch = useDispatch();
+  const movies = useSelector((state) => state.moviesReducer.movies);
+
+  useEffect(() => {
+    dispatch(fetchMovies());
+  }, []);
+
+  const validateEntry = (event) => {
+    const { name, value } = event.target;
+    if (name !== 'Title') {
+      return true;
+    }
+    const check = movies.filter((movieItem) => movieItem.title === value);
+    if (check.length > 0) {
+      setIsError(true);
+    } else {
+      setIsError(false);
+    }
+    return false;
+  };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setMovie((prevMovie) => ({ ...prevMovie, [name]: value }));
+    validateEntry(event);
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     fetchAddMovie(movie);
@@ -57,6 +80,7 @@ const AddMovies = () => {
   };
 
   return (
+
     <>
       <NavBar />
       <div className="w-full flex justify-center bg-gray-100 py-16">
@@ -81,6 +105,7 @@ const AddMovies = () => {
                 required
                 className="py-2 px-3 border border-gray-300 w-full"
               />
+              <h2 id="validAlert" className={`bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded ${isError ? 'visible' : 'invisible'}`} role="alert">Movie Already Exist</h2>
             </div>
             <div className="mb-4 w-full">
               <label htmlFor="director" className="block mr-5">
@@ -212,6 +237,7 @@ const AddMovies = () => {
             <button
               type="submit"
               className="col-span-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              disabled={isError}
             >
               Add Movie
             </button>
