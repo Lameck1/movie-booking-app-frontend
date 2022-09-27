@@ -39,12 +39,12 @@ To get a local copy up and running follow these simple steps.
  
 ### Setup
  
-- ```git https://github.com/KingsleyIbe/movie-booking-app-frontend.git``
+- ```git https://github.com/lameck1/movie-booking-app-frontend.git``
  
 - ```cd movie-booking-app-frontend```
  
 ### Backend Project Repo
-[Project Repo](https://github.com/KingsleyIbe/movie-booking-app-backend)
+[Project Repo](https://github.com/lamack1/movie-booking-app-backend)
  
 ### Running The App Locally
  
