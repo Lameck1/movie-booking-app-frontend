@@ -12,7 +12,7 @@ const Movies = () => {
 
   useEffect(() => {
     dispatch(fetchMovies());
-  }, []);
+  }, [movies]);
 
   return (
     <>
