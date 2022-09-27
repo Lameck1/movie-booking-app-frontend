@@ -14,7 +14,7 @@ const MovieDetails = () => {
   // asyn function for deleting movies
   const deleteMovie = async (movie) => {
     const response = await fetch(
-      `http://localhost:3000/api/v1/movies/${movie.id}`,
+      `https://moviebookingapi.herokuapp.com/api/v1/movies/${movie.id}`,
       {
         method: 'DELETE',
       },

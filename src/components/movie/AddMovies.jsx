@@ -22,7 +22,7 @@ const fetchAddMovie = async (movie) => {
 
   try {
     const response = await axios.post(
-      'http://localhost:3000/api/v1/movies/create',
+      'https://moviebookingapi.herokuapp.com/api/v1/movies/create',
       sendMovie,
     );
     return response;
