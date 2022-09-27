@@ -10,7 +10,7 @@ Kanban Board Screenshot:
 Project Repo:
 [View Here](https://github.com/Lameck1/movie-booking-app-frontend)
  
-# [Live Demo - coming up]()
+# [Live Demo](https://moviebooking-app.netlify.app/)
  
 # Demo Account
  
