@@ -3,7 +3,7 @@ const GET_SINGLE_RESERVATION = 'reservation/get_single_reservation';
 const GET_ALL_RESERVATION = 'reservation/get_all_reservation';
 const DELETE_RESERVATION = 'reservation/delete_reservation';
 
-const END_POINT = 'http://localhost:3000';
+const END_POINT = 'https://moviebookingapi.herokuapp.com';
 const API_ROUTE = '/api/v1';
 
 export const createReservationAction = (payload) => ({

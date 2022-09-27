@@ -26,7 +26,7 @@ export const deleteMovie = (payload) => ({
 });
 
 export const fetchMovies = () => async (dispatch) => {
-  const res = await axios.get('http://localhost:3000/api/v1/movies');
+  const res = await axios.get('https://moviebookingapi.herokuapp.com/api/v1/movies');
   const newMovies = res.data.data.movies;
   dispatch(movies(newMovies));
 };
@@ -45,7 +45,7 @@ export const addMovies = async (movieData, dispatch) => {
     lead_cast: movieData['Lead Cast'],
   };
   const response = await axios.post(
-    'http://localhost:3000/api/v1/movies/create',
+    'https://moviebookingapi.herokuapp.com/api/v1/movies/create',
     sendMovie,
   );
   dispatch(addMovie(response.data.movie));
