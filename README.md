@@ -8,9 +8,9 @@ Kanban Board Screenshot:
 ![image](https://user-images.githubusercontent.com/43799727/165486364-22fbb1cb-349d-40eb-a184-49dddb39461d.png)
  
 Project Repo:
-[View Here](https://github.com/KingsleyIbe/movie-booking-app-frontend)
+[View Here](https://github.com/Lameck1/movie-booking-app-frontend)
  
-# [Live Demo]( https://kingsleyibe.github.io/movie-booking-app-frontend/)
+# [Live Demo - coming up]()
  
 # Demo Account
  
@@ -39,18 +39,18 @@ To get a local copy up and running follow these simple steps.
  
 ### Setup
  
-- ```git https://github.com/lameck1/movie-booking-app-frontend.git``
+- ```git https://github.com/Lameck1/movie-booking-app-frontend.git```
  
 - ```cd movie-booking-app-frontend```
  
 ### Backend Project Repo
-[Project Repo](https://github.com/lamack1/movie-booking-app-backend)
+[Project Repo](https://github.com/Lameck1/movie-booking-app-backend)
  
 ### Running The App Locally
  
 - Run `npm install`
  
-- Make sure to run our [Rails backend application](https://github.com/KingsleyIbe/movie-booking-app-backend) first before running the React app so that it takes up the `port 3000`. This is very important as our rails API endpoint must run on `port 3000` for the API to work.
+- Make sure to run our [Rails backend application](https://github.com/Lameck1/movie-booking-app-backend) first before running the React app so that it takes up the `port 3000`. This is very important as our rails API endpoint must run on `port 3000` for the API to work.
 - Once the backend is running on `port 3000` then start the react app and you will be prompted to run the server on another port like `port 3001`. You will receive a message in your terminal like this `Would you like to run the app on another port instead? » (Y/n)`. Please enter `y` so that the react app will start on `port 3001`.
  
 # Authors
